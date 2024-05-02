@@ -1,14 +1,14 @@
 # apnea_detection
 
 ## Overview
-This project aims to develop a machine learning model to detect apnea using physiological signals. Apnea, a potentially serious sleep disorder, involves periods during which breathing stops or becomes shallow during sleep. Early detection is crucial for effective management and treatment.
+This project aims to develop a deep learning model to detect apnea using physiological signals. Apnea, a potentially serious sleep disorder, involves periods during which breathing stops or becomes shallow during sleep. Early detection is crucial for effective management and treatment.
 
 ## Data Source
 Data for this project is sourced from the Sleep Heart Health Study database available at [PhysioNet](https://physionet.org/content/slpdb/1.0.0/). This dataset includes physiological signals recorded during sleep such as ECG, BP, and EEG, which are instrumental in diagnosing sleep disorders like apnea.
 
 ## Methodology
 ### Data Preprocessing
-Data from each patient is processed to extract relevant signals (ECG, BP, EEG) and segment these into 30-second windows, aligning with the standard measurement periods used in sleep studies. This preprocessing is crucial for the consistency and accuracy of feature extraction.
+Data from each patient is processed to extract relevant signals (ECG, BP, EEG) and segment these into 30-second windows, aligning with the standard measurement periods used in sleep studies. This preprocessing is necessary to prepare the data to be input into the neural network.
 
 ### Model Architecture
 The core of our analysis is built on a deep learning model using LSTM (Long Short-Term Memory) layers. This model architecture is designed to capture temporal dependencies in the physiological signals, which are pivotal for detecting patterns indicative of apnea.
